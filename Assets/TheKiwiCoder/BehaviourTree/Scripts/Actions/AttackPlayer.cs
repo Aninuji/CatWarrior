@@ -10,6 +10,7 @@ public class AttackPlayer : ActionNode
     
     protected override void OnStart()
     {
+        Debug.Log("Entering Attack State");
         context.characterActionController.Attack();
         context.characterActionController.OnAttackEnd += AttackEnd;
     }

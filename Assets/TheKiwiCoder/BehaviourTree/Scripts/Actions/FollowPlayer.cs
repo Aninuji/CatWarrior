@@ -16,6 +16,7 @@ public class FollowPlayer : ActionNode
     public float OutOfReachDistance = 5.0f;
     protected override void OnStart()
     {
+        Debug.Log("Entering Following State");
         context.agent.stoppingDistance = stoppingDistance;
         context.agent.speed = speed;
         //context.agent.destination = blackboard.moveToPosition;

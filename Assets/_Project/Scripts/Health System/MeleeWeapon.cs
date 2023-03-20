@@ -28,6 +28,7 @@ public class MeleeWeapon : BaseWeapon
         CharacterHealthController character = (CharacterHealthController)damageableObj;
         if (isEquiped && canDamage && damageableObj != null && character != wielderHealth)
         {
+            Debug.Log(damageableObj);
             damageableObj.Damage(baseDamage);
         }
     }
