@@ -1,5 +1,46 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6860813938757815608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf4a46b35ac69144accc15ddc73bca5, type: 3}
+  m_Name: CheckPlayerDistance
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 05d09548d59eef242bfa6cf868dda88b
+  position: {x: -208, y: -86.72}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+  description: 
+  drawGizmos: 0
+  CloseDistance: 7.13
+--- !u!114 &-5210227670694379928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59e50fd441e5124b9531983ec64b244, type: 3}
+  m_Name: AttackPlayer
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f44ee63844a3fa640a663211ef995d2f
+  position: {x: 155, y: -83.520004}
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+  description: 
+  drawGizmos: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18,57 +59,11 @@ MonoBehaviour:
   - {fileID: 3192847248893879798}
   - {fileID: 2611735338341537925}
   - {fileID: 6018252264195685861}
-  - {fileID: 6083269347725042434}
-  - {fileID: 1931752991859274241}
-  - {fileID: 1265648441173913652}
+  - {fileID: -6860813938757815608}
+  - {fileID: 8353628162638789575}
+  - {fileID: -5210227670694379928}
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
---- !u!114 &1265648441173913652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59e50fd441e5124b9531983ec64b244, type: 3}
-  m_Name: AttackPlayer
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 706223a6fe4780549b57269c157ded96
-  position: {x: 184, y: -79}
-  blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-  description: 
-  drawGizmos: 0
---- !u!114 &1931752991859274241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ef9a3afb849946ae3979c7c028247, type: 3}
-  m_Name: FollowPlayer
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 43d0b6f54cb705043a69d614758e669d
-  position: {x: -0.93498385, y: -77.99996}
-  blackboard:
-    moveToPosition: {x: 0, y: 0, z: 0}
-  description: 
-  drawGizmos: 0
-  speed: 5
-  stoppingDistance: 0.55
-  updateRotation: 1
-  acceleration: 40
-  tolerance: 1
-  OutOfReachDistance: 1
 --- !u!114 &2611735338341537925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,10 +129,10 @@ MonoBehaviour:
   description: 
   drawGizmos: 0
   children:
-  - {fileID: 6083269347725042434}
-  - {fileID: 1931752991859274241}
-  - {fileID: 1265648441173913652}
---- !u!114 &6083269347725042434
+  - {fileID: -6860813938757815608}
+  - {fileID: 8353628162638789575}
+  - {fileID: -5210227670694379928}
+--- !u!114 &8353628162638789575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,15 +141,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcf4a46b35ac69144accc15ddc73bca5, type: 3}
-  m_Name: CheckPlayerDistance
+  m_Script: {fileID: 11500000, guid: ed6ef9a3afb849946ae3979c7c028247, type: 3}
+  m_Name: FollowPlayer
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 4671a936fd788a847aac7b503577c802
-  position: {x: -187, y: -80}
+  guid: ec3d8642cbef3274cbea032a5ae8e4d6
+  position: {x: -13, y: -81.600006}
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
   description: 
   drawGizmos: 0
-  CloseDistance: 7.13
+  speed: 5
+  stoppingDistance: 0.95
+  updateRotation: 1
+  acceleration: 40
+  tolerance: 1
+  OutOfReachDistance: 5
