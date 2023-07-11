@@ -76,6 +76,9 @@ public class CharacterHealthController : MonoBehaviour, IDamageable
         if (!canBeDamaged) return;
         _health -= damageAmount;
 
+
+        if (OnDamage != null) OnDamage();
+
         if (_health <= 0)
         {
             Death();
@@ -85,7 +88,6 @@ public class CharacterHealthController : MonoBehaviour, IDamageable
         animatorController.TriggerDamageHit();
         canBeDamaged = false;
 
-        if (OnDamage != null) OnDamage();
 
 
         if (damageTimer != null) StopCoroutine(damageTimer);
